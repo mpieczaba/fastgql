@@ -20,11 +20,10 @@ your Schema you won't need to define any resolvers!
 
 Create a directory for your project, and initialise it as a Go Module:
 
-```sh
+```bash
 $ mkdir fastgql-example
 $ cd fastgql-example 
 $ go mod init github.com/[username]/fastgql-example
-$ go get github.com/roneli/fastgql
 ```
 
 #### Add github.com/roneli/fastgql to your project’s tools.go 
@@ -40,6 +39,7 @@ go mod tidy
 
 ```bash
 $ go run github.com/roneli/fastgql init
+$ go mod tidy
 ```
 
 This will create our suggested package layout. You can modify these paths in gqlgen.yml if you need to.
